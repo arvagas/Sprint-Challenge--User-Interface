@@ -146,7 +146,6 @@ footer nav a {
 }
 
 /**************************************** Start of personal code ****************************************/
-
 /******************** Site-wide ********************/
 
 .top-nav {
@@ -172,6 +171,7 @@ footer nav a {
 .index-header-img {
     margin-bottom: 3%;
 }
+
 
 /******************** index.html ********************/
 
@@ -215,6 +215,7 @@ footer nav a {
     background: dodgerblue;
 }
 
+
 /******************** about.html ********************/
 
 .about-page .top-content .text-container{
@@ -255,9 +256,18 @@ footer nav a {
     margin-bottom: 3%;
 }
 
+
 /**************************************** Stretch Goals ****************************************/
+/******************** Blog Page ********************/
+/* Build a page of your choosing from the navigation items. Come up with content and images that fit the theme. */
+
+.blog-page .top-content .text-container{
+    width: 98%;
+}
+
 
 /******************** CSS Animations ********************/
+/* Introduce CSS animations to your site. */
 
 @keyframes example {
     33% {background-color: white;}
@@ -305,4 +315,26 @@ html {
     animation-duration: 5s;
 }
 
+@keyframes navDrop {
+    from {left:0%;top:100%;}
+    to {left:0%;top:0%;}
+}
+
+.top-nav {
+    position: relative;
+    animation-name: navDrop;
+    animation-duration: 5s;
+}
+
+
 /******************** Contact Page ********************/
+/* Build a contact page and create a form with several inputs of your choosing */
+
+.contact-page .top-content .text-container{
+    width: 98%;
+}
+
+
+
+/******************** Responsive Breakpoints ********************/
+/* Add responsive breakpoints to your code by using media queries */
