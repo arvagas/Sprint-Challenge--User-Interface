@@ -265,6 +265,10 @@ footer nav a {
     width: 98%;
 }
 
+.youtube {
+    display: block;
+    margin: 0 auto 3%;
+}
 
 /******************** CSS Animations ********************/
 /* Introduce CSS animations to your site. */
@@ -314,8 +318,8 @@ html {
     animation-name: swipeLeft;
     animation-duration: 5s;
 }
-
-@keyframes navDrop {
+/***** Nav bar should drop down from the top into place *****/
+/* @keyframes navDrop {
     from {left:0%;top:100%;}
     to {left:0%;top:0%;}
 }
@@ -324,7 +328,21 @@ html {
     position: relative;
     animation-name: navDrop;
     animation-duration: 5s;
+} */
+
+/***** Youtube video should not be visible initially, then expands into place once swipe animation finishes *****/
+/* @keyframes peekABoo {
+    to {width:100%;height:100%;}
 }
+
+.youtube {
+    width:0%;
+    height:0%;
+    position: relative;
+    animation-name: peekABoo;
+    animation-duration: 5s;
+    animation-delay: 5s;
+} */
 
 
 /******************** Contact Page ********************/
